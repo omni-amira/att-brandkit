@@ -1,7 +1,477 @@
 {
-     "metadata": {
-       "name": "AT&T Brand Kit",
-       "version": "1.0.0",
-       "status": "active"
-     }
-   }
+  "metadata": {
+    "name": "AT&T Brand Kit",
+    "version": "1.0.0",
+    "lastUpdated": "2025-10-31",
+    "status": "active",
+    "description": "Comprehensive AT&T brand guidelines for AI email design systems",
+    "owner": "AT&T Brand Team",
+    "github_url": "https://raw.githubusercontent.com/YOUR_USERNAME/att-brandkit/main/brandkit/v1.0.0/att-brandkit.json",
+    "documentation": "https://github.com/YOUR_USERNAME/att-brandkit/blob/main/README.md"
+  },
+  
+  "brand_voice": {
+    "description": "Core communication style and personality. Brand voice is all about how we say what we say. It's a unique, ownable style of communication that brings our brand's personality and Purpose to life.",
+    "primary_characteristics": [
+      "curious",
+      "vibrant",
+      "human"
+    ],
+    "curious": {
+      "summary": "Listen, empathize, and connect on a personal level to truly understand people's wants and needs.",
+      "description": "Our Brand voice uses curiosity to bring our brand to life.",
+      "rules": [
+        "Share our expertise. Help customers find what they need and resolve problems.",
+        "Listen to your audience, then communicate. Be a good listener to understand wants and needs.",
+        "Make it personal. Get to know your audience and personalize communications.",
+        "Stick with it. Be relentless in solving customer needs and staying positive."
+      ]
+    },
+    "vibrant": {
+      "summary": "Communicate with energy, passion, and confidence in engaging and meaningful ways.",
+      "description": "Our Brand voice uses vibrancy to communicate with energy and confidence.",
+      "rules": [
+        "Inspire your audience. Give them new ideas and use aspirational language.",
+        "Be energetic. Use enthusiasm to create memorable experiences.",
+        "Be relevant. Know your audience and engage in ways that interest them.",
+        "Show confidence. Communicate with optimism about our capabilities."
+      ]
+    },
+    "human": {
+      "summary": "Down-to-earth, honest, and relatable. Keep things clear and simple by talking like real people.",
+      "description": "Our Brand voice remains down-to-earth and relatable.",
+      "rules": [
+        "Keep it simple. Use straightforward language, avoiding technical jargon.",
+        "Be relatable. Use conversational language that connects with people.",
+        "Be supportive. Show empathy and concern for personal needs.",
+        "Say what you mean. Be direct without being pushy. Avoid exaggerations or clichés."
+      ]
+    }
+  },
+
+  "tones": {
+    "description": "While we should always use our brand voice consistently, we also need some flexibility in how we communicate.",
+    "relatable": {
+      "description": "Conversational and personal approach",
+      "rules": [
+        "Speak conversationally and make it personal.",
+        "Use contractions and natural language.",
+        "Simplify technical and legal content to make it easily understood."
+      ],
+      "use_cases": ["customer support", "onboarding", "educational content", "billing communications"]
+    },
+    "confident": {
+      "description": "Demonstrate expertise and credibility",
+      "rules": [
+        "Demonstrate why we're the best instead of just saying it.",
+        "Focus on customer benefits rather than competitors.",
+        "Communicate with confidence without being arrogant."
+      ],
+      "use_cases": ["product launch", "performance claims", "competitive positioning", "new features"]
+    },
+    "humorous": {
+      "description": "Light-hearted engagement when appropriate",
+      "rules": [
+        "Use humor sparingly and appropriately.",
+        "Don't make jokes that could offend.",
+        "Avoid humor if it does not suit the context."
+      ],
+      "use_cases": ["seasonal campaigns", "brand entertainment", "social content", "internal communications"]
+    }
+  },
+
+  "design_system": {
+    "colors": {
+      "primary": {
+        "name": "AT&T Blue",
+        "hex": "#0068A5",
+        "rgb": "rgb(0, 104, 165)",
+        "usage": "Links, primary CTAs, brand accents, headers"
+      },
+      "secondary": {
+        "name": "Light Gray",
+        "hex": "#F6F6F6",
+        "rgb": "rgb(246, 246, 246)",
+        "usage": "Background sections, secondary containers, footer"
+      },
+      "accent": {
+        "name": "Dark Gray",
+        "hex": "#555555",
+        "rgb": "rgb(85, 85, 85)",
+        "usage": "Body text, secondary copy, fine print"
+      },
+      "text": {
+        "primary": "#000000",
+        "secondary": "#555555",
+        "tertiary": "#0068A5",
+        "light": "#FFFFFF"
+      },
+      "background": "#FFFFFF",
+      "border": "#CCCCCC"
+    },
+    "typography": {
+      "font_family": "Arial, 'Helvetica Neue', Helvetica, sans-serif",
+      "fallback": "sans-serif",
+      "heading_font_weight": 700,
+      "heading_sizes": {
+        "h1": {
+          "size": "38px",
+          "line_height": "1.2",
+          "letter_spacing": "normal"
+        },
+        "h2": {
+          "size": "24px",
+          "line_height": "1.2",
+          "letter_spacing": "normal"
+        },
+        "h3": {
+          "size": "16px",
+          "line_height": "1.2",
+          "letter_spacing": "normal"
+        },
+        "h4": {
+          "size": "14px",
+          "line_height": "1.2",
+          "letter_spacing": "normal"
+        }
+      },
+      "body_sizes": {
+        "standard": "14px",
+        "small": "12px",
+        "footnote": "10px"
+      },
+      "line_height": "1.2 to 1.5",
+      "font_weight": {
+        "regular": 400,
+        "semibold": 600,
+        "bold": 700
+      }
+    },
+    "spacing": {
+      "unit_base": "10px",
+      "padding": {
+        "xs": "5px",
+        "sm": "10px",
+        "md": "20px",
+        "lg": "30px",
+        "xl": "50px"
+      },
+      "margin": {
+        "xs": "5px",
+        "sm": "10px",
+        "md": "15px",
+        "lg": "20px",
+        "xl": "30px"
+      },
+      "line_spacing": "15px to 20px between major sections"
+    },
+    "buttons": {
+      "style": "solid",
+      "primary_color": "#0068A5",
+      "hover_color": "#005080",
+      "active_color": "#003d5c",
+      "padding": "10px 20px",
+      "border_radius": "4px",
+      "font_size": "14px",
+      "font_weight": 700,
+      "text_transform": "none",
+      "min_width": "120px",
+      "display": "inline-block",
+      "text_decoration": "none"
+    }
+  },
+
+  "email_structure": {
+    "layout": "responsive",
+    "desktop_width": "595px",
+    "mobile_breakpoint": "615px",
+    "container_padding": "0",
+    "sections": {
+      "header": {
+        "max_height": "100px",
+        "logo_size": "98px",
+        "logo_padding": "5px",
+        "background_color": "transparent",
+        "alignment": "center"
+      },
+      "hero": {
+        "max_width": "595px",
+        "max_height": "400px",
+        "aspect_ratio": "auto",
+        "padding": "0",
+        "mobile_height": "250px"
+      },
+      "content": {
+        "max_width": "595px",
+        "padding": "20px 30px",
+        "background_color": "#FFFFFF",
+        "mobile_padding": "20px"
+      },
+      "cta_section": {
+        "padding": "25px 30px",
+        "alignment": "center",
+        "spacing": "15px between CTAs"
+      },
+      "footer": {
+        "background_color": "#F6F6F6",
+        "padding": "25px 30px",
+        "font_size": "10px to 12px",
+        "text_color": "#555555",
+        "link_color": "#0068A5",
+        "border_top": "none"
+      }
+    }
+  },
+
+  "writing_guidelines": {
+    "description": "Rules for creating on-brand content",
+    "do": [
+      "Put reader benefits first",
+      "Use first and second person perspectives",
+      "Use active voice instead of passive",
+      "Write for accessibility, diversity, and inclusion",
+      "Use short, descriptive headings for complex concepts",
+      "Capitalize only proper nouns and branded terms",
+      "Use serial commas for clarity",
+      "Limit exclamation marks to impactful situations",
+      "Use contractions to sound conversational",
+      "Show empathy and understanding"
+    ],
+    "dont": [
+      "Repeat the exact words of the Purpose statement",
+      "Overuse exclamation marks (max 1-2 per email)",
+      "Replace words with emojis",
+      "Use ALL CAPS (looks like shouting)",
+      "Use unnecessary jargon, slang, or acronyms",
+      "Use emojis except sparingly",
+      "Be pushy or aggressive in tone",
+      "Make exaggerations or overstate benefits",
+      "Use clichés or overused phrases",
+      "Sound corporate or robotic"
+    ],
+    "structure": {
+      "subject_line": {
+        "recommended_length": "40-50 characters",
+        "optimal_length": "45 characters",
+        "tone": "curious, relatable",
+        "personalization": true,
+        "urgency": "optional",
+        "number_emojis": 0,
+        "examples": ["Your internet upgrade is here", "Save on fiber with AT&T", "Internet faster than before"]
+      },
+      "preview_text": {
+        "length": "80-100 characters",
+        "purpose": "Complete subject line with compelling preview",
+        "should_be_different_from": "subject_line"
+      },
+      "body_paragraphs": {
+        "max_line_length": "100-150 characters",
+        "alignment": "left",
+        "spacing": "1.5 line height",
+        "max_paragraph_length": "3-4 sentences"
+      },
+      "headings": {
+        "hierarchy": "Use H1 for main, H2 for sections, H3 for subsections",
+        "caps": "Title Case, not ALL CAPS",
+        "length": "8-10 words max"
+      }
+    }
+  },
+
+  "imagery": {
+    "style": "professional, aspirational, relatable",
+    "guidelines": [
+      "Use high-quality, on-brand imagery",
+      "Feature diverse representations of people and situations",
+      "Show products in real-world, relatable contexts",
+      "Maintain consistent color grading and filters",
+      "Use lifestyle imagery that conveys tangible customer value",
+      "Ensure images are compressed and optimized for email",
+      "Always include alt text for accessibility",
+      "Use AT&T brand assets when available"
+    ],
+    "forbidden": [
+      "Blurry or low-resolution images",
+      "Competitor branding or logos",
+      "Outdated technology depictions",
+      "Overly staged or unrealistic scenarios",
+      "Images without alt text",
+      "Cluttered or confusing compositions",
+      "Images that don't align with brand aesthetics"
+    ],
+    "optimization": {
+      "max_file_size": "100KB per image",
+      "recommended_format": "JPG for photos, PNG for graphics",
+      "responsive": "Scale appropriately for mobile",
+      "alt_text": "Required and descriptive (50-125 characters)"
+    }
+  },
+
+  "compliance": {
+    "legal_requirements": {
+      "unsubscribe": "Always include visible unsubscribe link in footer",
+      "unsubscribe_url": "{{unsubscribeUrl}}",
+      "view_online": "{{viewInBrowserUrl}}",
+      "privacy_policy": "https://www.att-promotions.com/privacy-policy",
+      "terms_and_conditions": "https://www.att-promotions.com/terms-and-conditions",
+      "ccpa": "http://compliance.centerfield.com/doNotSell.php",
+      "accessibility": "WCAG 2.1 AA compliance required",
+      "footer": "Include sender address and contact information",
+      "disclaimers": "Legal disclaimers required for certain offers"
+    },
+    "brand_requirements": {
+      "logo": "AT&T logo required in header or footer (no less than 98px)",
+      "trademark": "© AT&T notice required in footer",
+      "preferred_dealer": "Include 'AT&T Preferred Dealer' badge if applicable",
+      "disclaimer_text": "Legal disclaimers in footer as applicable",
+      "tagline": "Optional but recommended for brand reinforcement"
+    },
+    "footer_elements": {
+      "sender_info": "This email was sent from Home Service Pros via ATT-promotions.com",
+      "address": "12130 Millennium Drive, Suite 600, Los Angeles, CA 90094",
+      "copyright": "©2025 AT&T Intellectual Property. All Rights Reserved. AT&T and Globe logo are trademarks of AT&T Intellectual Property and/or AT&T affiliated companies. All other marks are the property of their respective owners.",
+      "unsubscribe_link": "{{unsubscribeUrl}}",
+      "view_online_link": "{{viewInBrowserUrl}}",
+      "privacy_policy_link": "https://www.att-promotions.com/privacy-policy",
+      "terms_conditions_link": "https://www.att-promotions.com/terms-and-conditions",
+      "ccpa_link": "http://compliance.centerfield.com/doNotSell.php"
+    },
+    "email_best_practices": {
+      "reply_to": "Set valid reply-to address",
+      "from_name": "Use clear, recognizable from name",
+      "test_across_clients": "Test in Outlook, Gmail, Apple Mail, Mobile",
+      "mobile_optimization": "80% of users open on mobile",
+      "load_time": "Optimize images for quick loading",
+      "list_id_header": "Include List-ID header"
+    }
+  },
+
+  "ai_instructions": {
+    "description": "Specific instructions for AI email design systems using this brandkit",
+    "system_prompt_segment": "You are designing marketing and transactional emails for AT&T, a leading telecommunications and technology company. Your role is to create emails that reflect AT&T's brand voice and guidelines while serving the specific communication goal. Always adhere to these core principles: (1) Be Curious - Listen to customer needs and personalize communication. Share expertise to help customers find what they need. Make it personal. (2) Be Vibrant - Communicate with energy and confidence. Use aspirational language and show enthusiasm for what AT&T offers. Inspire your audience with new ideas. (3) Be Human - Keep language simple and conversational. Avoid technical jargon. Be relatable and supportive. Say what you mean without exaggeration. Maintain these characteristics across all generated content while adapting tone to the specific context.",
+    "voice_consistency_rules": "Maintain AT&T's Curious, Vibrant, and Human voice across all email copy. Match tone to email use case: (1) Relatable tone for support emails - make them personal and understandable. (2) Confident tone for product launches - demonstrate benefits, not just features. (3) Humorous tone only when appropriate to context and audience. Never let tone override the primary voice characteristics. Every sentence should feel like it comes from AT&T's perspective of understanding and helping customers.",
+    "design_constraints": {
+      "max_sections": 8,
+      "required_sections": ["header", "cta"],
+      "recommended_sections": ["header", "greeting or hero", "main_content", "cta", "footer"],
+      "color_palette": "Use AT&T Blue (#0068A5) for links and CTAs only. Use clean whites (#FFFFFF) and light grays (#F6F6F6) for backgrounds. Use dark gray (#555555) for body text. Limit color variety - maximum 3 colors in design.",
+      "image_requirement": "Hero image is optional but recommended for product/promotional emails. When included, ensure high quality, brand alignment, and accessibility with alt text.",
+      "typography": "Use Arial, Helvetica Neue, Helvetica, or sans-serif fallback. H1 max 38px, H2 24px, body 14px. Maintain readability on mobile (min 14px for body text).",
+      "responsive": "Ensure design is fully responsive at 595px desktop width, adapting for mobile at 615px breakpoint and below."
+    },
+    "cta_requirements": {
+      "primary_button_color": "#0068A5",
+      "primary_button_hover": "#005080",
+      "text_style": "Button-style with clear action text (e.g., 'Learn More', 'Claim Offer', 'Get Started')",
+      "minimum_padding": "10px 20px",
+      "minimum_font_size": "14px",
+      "minimum_count": 1,
+      "maximum_count": 3,
+      "action_text_guidelines": "Use active, benefit-focused language. Examples: 'Learn More About Fiber', 'Claim Your Offer', 'Start Saving Today', 'Get Help Now'"
+    },
+    "copy_guidelines": {
+      "subject_line": "40-50 characters, personalized when possible, no ALL CAPS, benefits-focused",
+      "preheader": "80-100 characters, complements subject line",
+      "headings": "Clear, benefit-focused, conversational tone, 8-10 words max",
+      "body_copy": "Short paragraphs (3-4 sentences), simple language, active voice, reader benefits first",
+      "exclusions": "No industry jargon, no exaggerations, no competitor mentions, no overly promotional language"
+    },
+    "template_frameworks": {
+      "product_launch": {
+        "sections": ["header", "hero_image", "headline", "benefit_statement", "key_features", "cta", "footer"],
+        "tone": "confident, vibrant",
+        "voice_emphasis": "vibrant > human > curious",
+        "cta_text_options": ["Learn More", "Discover Fiber", "See What's New"]
+      },
+      "customer_support": {
+        "sections": ["header", "personalized_greeting", "issue_resolution", "next_steps", "reassurance", "cta", "footer"],
+        "tone": "relatable, human",
+        "voice_emphasis": "human > curious > vibrant",
+        "cta_text_options": ["Get Help", "Contact Support", "View Solutions"]
+      },
+      "promotional_offer": {
+        "sections": ["header", "hero_image", "offer_headline", "offer_details", "urgency_element", "benefits", "cta", "footer"],
+        "tone": "vibrant, relatable",
+        "voice_emphasis": "vibrant > curious > human",
+        "cta_text_options": ["Claim Offer", "Save Now", "Upgrade Today"]
+      },
+      "educational_content": {
+        "sections": ["header", "introduction", "content_blocks", "key_takeaways", "related_content_cta", "footer"],
+        "tone": "human, curious",
+        "voice_emphasis": "curious > human > vibrant",
+        "cta_text_options": ["Learn More", "Explore Further", "Get Started"]
+      },
+      "event_invitation": {
+        "sections": ["header", "event_hero", "event_details", "key_reasons_to_attend", "registration_cta", "footer"],
+        "tone": "confident, vibrant",
+        "voice_emphasis": "vibrant > curious > human",
+        "cta_text_options": ["Register Now", "Save Your Spot", "RSVP"]
+      }
+    }
+  },
+
+  "templates": {
+    "product_launch": {
+      "description": "For introducing new products or services",
+      "suggested_sections": ["header", "hero_image", "value_proposition", "key_features", "benefits", "cta", "social_proof_optional", "footer"],
+      "tone": "confident, vibrant",
+      "voice_characteristics": ["Show confidence in the product", "Use aspirational language", "Communicate with energy", "Focus on customer benefits"],
+      "cta_text": "Learn More",
+      "example_subject": "Introducing faster internet for your home",
+      "key_message": "This changes everything for your internet experience"
+    },
+    "customer_support": {
+      "description": "For addressing customer issues and providing solutions",
+      "suggested_sections": ["header", "empathetic_greeting", "issue_acknowledgment", "solution_explanation", "next_steps", "support_cta", "footer"],
+      "tone": "relatable, human",
+      "voice_characteristics": ["Show empathy and concern", "Use conversational language", "Be direct and clear", "Provide reassurance"],
+      "cta_text": "Get Help",
+      "example_subject": "We're here to help with your internet",
+      "key_message": "We understand your issue and here's how we'll fix it"
+    },
+    "promotional": {
+      "description": "For promoting special offers and limited-time deals",
+      "suggested_sections": ["header", "hero_image", "offer_headline", "offer_details", "urgency_indicator", "benefits", "cta", "disclaimer", "footer"],
+      "tone": "vibrant, relatable",
+      "voice_characteristics": ["Inspire with the offer value", "Create urgency without being pushy", "Be enthusiastic about benefits", "Keep language simple"],
+      "cta_text": "Claim Offer",
+      "example_subject": "Limited time: Save $10/month on fiber",
+      "key_message": "Don't miss out on this opportunity to upgrade"
+    },
+    "educational": {
+      "description": "For sharing valuable information and building expertise",
+      "suggested_sections": ["header", "topic_introduction", "content_section_1", "content_section_2", "key_takeaways", "explore_more_cta", "footer"],
+      "tone": "human, curious",
+      "voice_characteristics": ["Share expertise helpfully", "Use simple explanations", "Listen to audience needs", "Stay relatable and supportive"],
+      "cta_text": "Learn More",
+      "example_subject": "What you need to know about 5G",
+      "key_message": "Understanding this will help you make better decisions"
+    }
+  },
+
+  "brand_compliance_checklist": {
+    "before_send": [
+      "Subject line is 40-50 characters",
+      "No ALL CAPS text (except necessary acronyms)",
+      "Uses active voice throughout",
+      "Color #0068A5 used for links/CTAs only",
+      "One-two exclamation marks max",
+      "No competitor mentions",
+      "Conversational, not corporate tone",
+      "Hero image optimized and includes alt text",
+      "CTA button is clearly clickable",
+      "Footer includes compliance elements"
+    ],
+    "compliance_footer_elements": [
+      "AT&T logo (98px minimum)",
+      "Sender info: This email was sent from Home Service Pros via ATT-promotions.com",
+      "Address: 12130 Millennium Drive, Suite 600, Los Angeles, CA 90094",
+      "Unsubscribe link: {{unsubscribeUrl}}",
+      "View Online link: {{viewInBrowserUrl}}",
+      "Privacy policy link: https://www.att-promotions.com/privacy-policy",
+      "Terms and Conditions link: https://www.att-promotions.com/terms-and-conditions",
+      "CCPA opt-out: http://compliance.centerfield.com/doNotSell.php",
+      "Copyright: ©2025 AT&T Intellectual Property. All Rights Reserved. AT&T and Globe logo are trademarks of AT&T Intellectual Property and/or AT&T affiliated companies. All other marks are the property of their respective owners."
+    ]
+  }
+}
